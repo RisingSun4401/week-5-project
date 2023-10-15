@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: white;
+        }
+
+        .price {
+            background-color:aliceblue;
+            width: 40%;
+            height: 100%;
+            height: 200px;
+            padding: 10px;
+            position: relative;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        p {
+            font-family: 'Sono', monospace;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .big {
+            font-size: 48px;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Sono', monospace;
+        }
+
+        .action {
+            font-size: 0.5rem;
+            text-align: center;
+            color: white;
+        }
+
+        button {
+            background-color: orange;
+            position: absolute;
+            border-radius: 15%;
+            left: 43%;
+            border: 0px;
+        }
+
+        #container {
+            display: flex;
+            gap: 2rem;
+            position: relative;
+            top: 55px;
+            justify-content:center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .category {
+            font-weight: 600;
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Sono', monospace;
+        }
+
+        ul {
+            text-align: center;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        @media(max-width:1200px) {
+            #container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+          
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+ <h1>Pricing Table</h1>
+ <div id="container">
+    <div class="price">
+    <div class="category">Basic</div>
+    <div class="big">$11.99/month</div>
+        <ul>
+            <li>✅ 10GB Storage</li>
+            <li>✅ 1 User</li>
+            <li>🚫 Support</li>
+        </ul>
+        <button><p class="action">Sign Up</p></button>
+     </div>
+     <div class="price">
+    <div class="category">Standard</div>
+    <div class="big">$19.99/month</div>
+        <ul>
+            <li>✅ 50GB Storage</li>
+            <li>✅ 5 Users</li>
+            <li>✅ Phone &amp; Email Support</li>  
+        </ul>
+        <button><p class="action">Sign Up</p></button>
+     </div>
+     <div class="price">
+        <div class="category">Premium</div>
+        <div class="big">$49.99/month</div>
+        <ul>
+            <li>✅ 100GB Storage</li>
+            <li>✅ 10 Users</li>
+            <li>✅ 24/7 Support</li> 
+        </ul>
+        <button><p class="action">Sign Up</p></button>
+     </div>
+ </div> 
+</body>
+</html>
